@@ -2,13 +2,28 @@
 
 const express = require("express");
 const router = express.Router();
+const now = require("performance-now");
 
 // In-memory storage for recipes
 let recipes = [];
 
+// Helper function to calculate response time
+function calculateResponseTime(startTime) {
+  const endTime = now();
+  return endTime - startTime;
+}
+
 // GET /recipes
 router.get("/recipes", (req, res) => {
+  // Get the start time
+  const startTime = now();
   res.send(recipes);
+
+  // Calculate response time
+  const responseTime = calculateResponseTime(startTime);
+  console.log(
+    `GET /api/recipes - Response time: ${responseTime.toFixed(2)} ms`
+  );
 });
 
 // Find a recipe by id

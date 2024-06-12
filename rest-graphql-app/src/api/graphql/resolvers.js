@@ -1,8 +1,28 @@
+const now = require("performance-now");
 let recipes = [];
+
+// Helper function to calculate response time
+function calculateResponseTime(startTime) {
+  const endTime = now();
+  return endTime - startTime;
+}
 
 const resolvers = {
   Query: {
-    recipes: () => recipes,
+    recipes: () => {
+      // Get the start time
+      const startTime = now();
+
+      const result = recipes;
+
+      // Calculate response time
+      const responseTime = calculateResponseTime(startTime);
+      console.log(
+        `GraphQL Query - recipes - Response time: ${responseTime.toFixed(2)} ms`
+      );
+      return result;
+    },
+
     recipe: (_, { id }) => recipes.find((recipe) => recipe.id === id),
   },
   Mutation: {
