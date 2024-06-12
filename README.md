@@ -10,7 +10,9 @@ Welcome to the Recipe Storage and Retrieval API! This project provides both REST
 - 📈 Query and mutate recipes using GraphQL
 - ⏱️ Measure performance of REST vs GraphQL
 
-## Screenshots 📸
+## 📸 Screenshots 
+
+
 
 ## 🚀 Installation
 
