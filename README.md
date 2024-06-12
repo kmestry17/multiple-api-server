@@ -12,6 +12,17 @@ Welcome to the Recipe Storage and Retrieval API! This project provides both REST
 
 ## 📸 Screenshots 
 
+### Performance time in ms (REST API vs GraphQL API)
+![](images/image01.png)
+
+### REST API response in POST MAN
+![](images/image02.png)
+
+### GraphQL API response in POST MAN
+![](images/image03.png)
+
+### GraphQL API response in POST MAN
+![](images/image04.png)
 
 
 ## 🚀 Installation
