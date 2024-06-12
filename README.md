@@ -16,8 +16,8 @@ Welcome to the Recipe Storage and Retrieval API! This project provides both REST
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/rest-graphql-app.git
-    cd rest-graphql-app
+    git clone https://github.com/kmestry17/multiple-api-server.git
+    cd multiple-api-server
     ```
 
 2. Install the dependencies:
